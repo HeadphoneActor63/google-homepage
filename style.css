@@ -1,14 +1,33 @@
+/*SITEWIDE*/
+
 body {
     border: 1px solid black;
-    height: 100vh;
+    height: 99.8vh;
     margin: 0;
     display: block;
 }
 
+a {
+    color: black;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /*NAV*/
 
-#nav {
-    /* border: 1px solid green; */
+#top-container {
+    display: block;
+    height: 175px;
+    border: 1px brown;
+}
+
+nav {
     margin: 20px;
     min-width: 200px;
     display: flex;
@@ -17,7 +36,6 @@ body {
 }
 
 .nav-link {
-    /* border: 1px solid yellow; */
     display: block;
     font-size: 15px;
 }
@@ -28,19 +46,19 @@ body {
 
 /*MAIN*/
 
-#main {
-    /* border: 1px solid pink; */
+main {
+    border: 1px solid purple;
     display: block;
-    position: absolute;
-    top: 200px;
-    width:100%;
-    height: 65vh;
+    padding: 20px 0 0 0;
+    height: 535px;
     text-align: center;
 }
 
 #logo {
-    /* border: 1px solid purple; */
-    width: 260px;
+    display: block;
+    margin: auto;
+    border: 1px solid purple;
+    width: 270px;
 }
 
 /*searchbar*/
@@ -49,17 +67,66 @@ textarea {
     border: 1px solid rgb(190, 190, 190);
     padding: 10px 15px 10px 15px;
     display: block;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 30px auto 30px auto;
     resize: none;
-    top: 20px;
-    height: 20px;
-    width: 500px;
+    height: 25px;
+    width: 560px;
     outline: none;
     font-size: 15px;
 }
 
-textarea:hover {
+textarea:hover, textarea:focus {
     box-shadow: 0px 0px 5px 1px rgb(206, 204, 204);
+}
+
+/*buttons*/
+
+#buttons {
+    display: block;
+    text-align: center;
+    margin: 0 auto 30px auto;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    margin: 0px 3px;
+    padding: 8px 14px;
+    background-color: rgb(248, 248, 248);
+}
+
+.button:hover {
+    box-shadow: 0px 1px 1px 2px rgb(228, 228, 228);
+    text-decoration: none;
+}
+
+/*language options*/
+
+#language-options {
+    display: block;
+    text-align: center;
+}
+
+.language {
+    padding: 0 8px;
+}
+
+.language:visited {
+    color: #551A8B;
+}
+
+/*FOOTER*/
+
+footer {
+    display: block;
+    position:fixed;
+    border: 1px solid coral;
+    margin: 0px;
+    height: 76px;
+    width: 100%;
+}
+
+#user-location {
+    display:block;
+    /* border: 1px solid brown; */
 }
