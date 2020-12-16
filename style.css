@@ -8,11 +8,6 @@ body {
     font-family: Arial;
 }
 
-.block-container {
-    display: block;
-    text-align: center;
-}
-
 a:link {
     text-decoration: none;
 }
@@ -27,10 +22,6 @@ a:hover {
 
 .btn-link:hover {
     text-decoration: none;
-}
-
-.btn-link:visited {
-    color:inherit;
 }
 
 /*NAV*/
@@ -61,7 +52,7 @@ nav {
     color: rgb(62, 62, 62);
 }
 
-.other-children {
+.margin-left {
     margin-left: 18px;
 }
 
@@ -126,7 +117,6 @@ textarea:hover, textarea:focus {
     display: block;
     text-align: center;
     margin: 0 auto 30px auto;
-    color: rgb(60, 60, 60);
     font-size: 14px;
 }
 
@@ -134,6 +124,7 @@ textarea:hover, textarea:focus {
     display: inline-block;
     margin: 0px 4px;
     background-color: rgb(248, 248, 253);
+    color: rgb(60, 60, 60);
     padding: 9px 17px;
 }
 
