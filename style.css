@@ -1,17 +1,19 @@
 /*SITEWIDE*/
 
 body {
-    border: 1px solid black;
+    /* border: 1px solid rgb(62, 62, 62); */
     height: 99.8vh;
     margin: 0;
     display: block;
+    font-family: Arial;
 }
 
-a {
-    color: black;
+.block-container {
+    display: block;
+    text-align: center;
 }
 
-a:link, a:visited, a:active {
+a:link {
     text-decoration: none;
 }
 
@@ -19,35 +21,74 @@ a:hover {
     text-decoration: underline;
 }
 
+.btn-link {
+    border-radius: 3px;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+}
+
+.btn-link:visited {
+    color:inherit;
+}
+
 /*NAV*/
 
 #top-container {
     display: block;
     height: 175px;
-    border: 1px brown;
+    /* border: 1px brown; */
 }
 
 nav {
-    margin: 20px;
+    margin: 15px 35px;
     min-width: 200px;
+    font-size: 13px;
     display: flex;
     text-align: right;
     float: right;
 }
 
 .nav-link {
+    /* border: 1px solid orange; */
     display: block;
-    font-size: 15px;
+    padding: 5px 0 0 0;
+    color: rgb(30, 30, 30);
+}
+
+.nav-link:hover {
+    color: rgb(62, 62, 62);
 }
 
 .other-children {
-    padding-left: 20px;
+    margin-left: 18px;
+}
+
+#google-apps {
+    margin-top: 1.5px;
+    width: 24px;
+    opacity: 0.5;
+}
+
+#google-apps:hover {
+    opacity: 1;
+}
+
+#sign-in-btn {
+    text-align: center;
+    padding: 8px 14px;
+    color: white;
+    background-color: rgb(66, 133, 244);
+}
+
+#sign-in-btn:hover {
+    box-shadow: 0px 0.5px 0px 0.5px rgb(220, 220, 220);
 }
 
 /*MAIN*/
 
 main {
-    border: 1px solid purple;
     display: block;
     padding: 20px 0 0 0;
     height: 535px;
@@ -57,15 +98,14 @@ main {
 #logo {
     display: block;
     margin: auto;
-    border: 1px solid purple;
     width: 270px;
 }
 
 /*searchbar*/
 
 textarea {
-    border: 1px solid rgb(190, 190, 190);
-    padding: 10px 15px 10px 15px;
+    border: 1px solid rgb(220, 220, 220);
+    padding: 12px 15px 8px 15px;
     display: block;
     margin: 30px auto 30px auto;
     resize: none;
@@ -85,19 +125,20 @@ textarea:hover, textarea:focus {
     display: block;
     text-align: center;
     margin: 0 auto 30px auto;
+    color: rgb(60, 60, 60);
+    font-size: 14px;
 }
 
 .button {
     display: inline-block;
-    border-radius: 4px;
-    margin: 0px 3px;
-    padding: 8px 14px;
-    background-color: rgb(248, 248, 248);
+    margin: 0px 4px;
+    background-color: rgb(248, 248, 253);
+    padding: 9px 17px;
 }
 
 .button:hover {
     box-shadow: 0px 1px 1px 2px rgb(228, 228, 228);
-    text-decoration: none;
+    color: rgb(30, 30, 30);
 }
 
 /*language options*/
@@ -105,6 +146,7 @@ textarea:hover, textarea:focus {
 #language-options {
     display: block;
     text-align: center;
+    font-size: 13px;
 }
 
 .language {
@@ -119,14 +161,37 @@ textarea:hover, textarea:focus {
 
 footer {
     display: block;
-    position:fixed;
-    border: 1px solid coral;
-    margin: 0px;
+    position: absolute;
+    z-index: 10;
     height: 76px;
     width: 100%;
+    color: rgb(120, 120, 120);
+    background-color:rgb(243, 243, 243);
 }
 
-#user-location {
-    display:block;
-    /* border: 1px solid brown; */
+.ftr-link:visited {
+    color: inherit;
+}
+
+.ftr-link:active {
+    color:red;
+}
+
+#footer-top {
+    display: block;
+    font-size: 15px;
+    padding: 11px 30px 1px 30px;
+    border: 1px solid rgb(218, 218, 218);
+    height: 28px;
+}
+
+#footer-bottom {
+    font-size: 14px;
+    display: block;
+    padding: 10px 30px 0px 30px;
+    height: 2px;
+}
+
+#bottom-1 {
+    float: right;
 }
